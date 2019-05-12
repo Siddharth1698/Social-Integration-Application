@@ -9,7 +9,6 @@
     android:padding="20sp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:src="@drawable/workicon"
         android:layout_width="120sp"
         android:layout_height="120sp"
         android:layout_gravity="center"
@@ -41,30 +40,11 @@
         android:layout_marginBottom="20sp"/>
 
 
-    <TextView
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:id="@+id/birthday"
-        android:layout_width="match_parent"
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@null"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:hint="Birthday"
-        android:layout_marginBottom="20sp"/>
-
-
-    <TextView
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:id="@+id/frds"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:hint="Number of friends"
-        android:layout_marginBottom="20sp"/>
-
-
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
 </LinearLayout>
