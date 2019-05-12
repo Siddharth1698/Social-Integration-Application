@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Bundle parameters = new Bundle();
-        parameters.putString("feilds","first_name,last_name,email,id");
+        parameters.putString("fields","first_name,last_name,email,id");
         graphRequest.setParameters(parameters);
         graphRequest.executeAsync();
     }
