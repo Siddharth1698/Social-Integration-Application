@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton = (LoginButton)findViewById(R.id.login_button);
         callbackManager = CallbackManager.Factory.create();
         loginButton.setReadPermissions(Arrays.asList("email","public_profile"));
+        checkLoginStatus();
 
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -111,5 +112,11 @@ public class MainActivity extends AppCompatActivity {
         parameters.putString("feilds","first_name,last_name,email,id");
         graphRequest.setParameters(parameters);
         graphRequest.executeAsync();
+    }
+
+    private void checkLoginStatus(){
+        if (AccessToken.getCurrentAccessToken()!=null){
+            loaduserProfile(AccessToken.getCurrentAccessToken());
+        }
     }
 }
