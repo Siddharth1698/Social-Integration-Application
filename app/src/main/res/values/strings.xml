@@ -2,4 +2,11 @@
     <string name="app_name">Social Integration</string>
     <string name="facebook_app_id">661492704273559</string>
     <string name="fb_login_protocol_scheme">fb661492704273559</string>
+
+
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">ijVRaffQEjfICW515bBTt75Y3</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">31SXmzGEdgqFh5aOTGZck2zXLA0XCdKF4P2NOUscPxwK0wptFj</string>
+    <string name="custom_log_in_with_twitter">Custom Log in with Twitter</string>
+    <string name="get_profile_image">Fetch Profile Image</string>
 </resources>

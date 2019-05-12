@@ -26,9 +26,11 @@ import org.json.JSONObject;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView timg;
+    private CircleImageView timg;
     private CallbackManager callbackManager;
     private TextView tname,temail;
     private LoginButton loginButton;
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        timg = (ImageView)findViewById(R.id.profileimage);
+        timg = (CircleImageView) findViewById(R.id.profileimage);
         tname = (TextView)findViewById(R.id.name);
         temail = (TextView)findViewById(R.id.email);
         loginButton = (LoginButton)findViewById(R.id.login_button);
